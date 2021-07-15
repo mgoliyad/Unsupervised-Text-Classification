@@ -13,7 +13,7 @@
         "min_portion_samples_to_keep": 0.75,
         "vec_model": "TFIDF",
         "outliner_removal_model": ["birch"],
-        "dim_reduction_model": ["BernoulliRBM"],
+        "dim_reduction_model": ["PCA"],
         "clustering": ["Kmeans"]
       }
 }

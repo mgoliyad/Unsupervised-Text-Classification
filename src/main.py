@@ -22,9 +22,7 @@ def main():
     U_classifier = Unsupervised_Classifier(data_dir, config, printout)
     U_classifier.text_clustering()
 
-    
-
-    
+ 
 if __name__ == '__main__':
     main()
     print('Press any key to exit the program...')

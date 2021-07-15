@@ -8,7 +8,7 @@ For data in this example, I used datasets from 20 newsgroups.
 Supported options for each of the above steps are:
 1)	Vectorization:
 a.	TFIDF (term-frequency - inverse document-frequency)
-b.	Count
+b.	BOW (bag of words)
 
 2)	Feature reduction: 
 a.	PCA (Principal Component Analysis)
@@ -26,4 +26,4 @@ c.	DBSCAN (Density-Based Spatial Clustering of Applications)
 a.	K-means
 b.	Gaussian Mixture
   
-The module uses Silhouette, Calinski & Harabasz, and Davies & Bouldin scoring for evaluating accuracy of the classification(s)
+The module uses Silhouette, Calinski & Harabasz, and Davies & Bouldin scoring for evaluating accuracy of the classification(s).

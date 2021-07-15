@@ -1,0 +1,19 @@
+{
+    "text_processing": {
+        "min_text_length": 250,
+        "max_vocab_size": 10000,
+        "min_vocab_size": 50
+        },
+    "unsupevised": {
+        "max_k": 5,
+        "min_k": 2,
+        "vec_model": "TDIDF",
+        "max_frequency": [0.75],
+        "min_frequency": [0.03],
+        "min_portion_samples_to_keep": 0.75,
+        "vec_model": "TFIDF",
+        "outliner_removal_model": ["birch"],
+        "dim_reduction_model": ["BernoulliRBM"],
+        "clustering": ["Kmeans"]
+      }
+}

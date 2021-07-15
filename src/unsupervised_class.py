@@ -263,8 +263,7 @@ class Unsupervised_Classifier():
     
     def feature_analysis(self, n_components, feature_names, vectors, model_name='NMF'):
         '''Feature analysis to reduce number of feature to improve clustering accuracy'''
-        
-        print(n_components, vectors.shape)
+
         if model_name == 'PCA':
             pca_model = PCA()
             param_grid = {'n_components': [min(vectors.shape[1]-1, n_components-5), n_components, min(vectors.shape[1]-1, n_components +5)] , 'whiten': [True, False], 'svd_solver': ['auto', 'full', 'arpack', 'randomized']}
@@ -337,8 +336,6 @@ class Unsupervised_Classifier():
                 pca_model = BernoulliRBM(n_components=n_components, learning_rate=lr, batch_size=batch_size, n_iter=10, verbose=0, random_state=1)
                 transformed_data = pca_model.fit_transform(vectors)
                 score_smp = pca_model.score_samples(vectors)
-                print(pca_model.components_)
-                
                 score = sum(score_smp)/len(score_smp)
                 if best_score < score:
                     best_score = score

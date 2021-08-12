@@ -3,7 +3,6 @@ import json
 from pathlib import Path
 from unsupervised_class import Unsupervised_Classifier
 
-
 def main():
 
     '''Reading config file with all input data for ML modeling'''
